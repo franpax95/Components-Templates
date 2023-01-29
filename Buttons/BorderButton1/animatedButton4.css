@@ -1,0 +1,107 @@
+.animatedButton4 {
+    position: absolute;
+    display: block;
+    width: 230px;
+    height: 42px;
+    color: #ebff33;
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+}
+
+.animatedButton4 span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    z-index: 1;
+}
+
+.animatedButton4 .border {
+    border: 1px solid #ebff33;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.animatedButton4 .top,
+.animatedButton4 .bottom,
+.animatedButton4 .left,
+.animatedButton4 .right {
+    background-color: #ebff33;
+    height: 1px;
+    width: 0;
+}
+
+.animatedButton4 .left,
+.animatedButton4 .right {
+    height: 0;
+    width: 1px;
+}
+
+.animatedButton4 .top {
+    top: -5px;
+    left: -15px;
+}
+
+.animatedButton4 .bottom {
+    bottom: -5px;
+    right: -15px;
+}
+
+.animatedButton4 .left {
+    top: -15px;
+    right: -5px;
+}
+
+.animatedButton4 .right {
+    bottom: -15px;
+    left: -5px;
+}
+
+.animatedButton4:hover {
+    color: #fff;
+}
+
+.animatedButton4:hover .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+}
+
+.animatedButton4:hover .top,
+.animatedButton4:hover .bottom {
+    width: 230px;
+}
+
+.animatedButton4:hover .left,
+.animatedButton4:hover .right {
+    height: 40px;
+}
+
+.animatedButton4:hover .top {
+    left: -5px;
+}
+
+.animatedButton4:hover .bottom {
+    right: -5px;
+}
+
+.animatedButton4:hover .left {
+    top: -5px;
+}
+
+.animatedButton4:hover .right {
+    bottom: -5px;
+}
+
+.animatedButton4 .text {
+    position: relative;
+    letter-spacing: .03em;
+}

@@ -1,0 +1,99 @@
+.SlideShareButton1{
+    display: flex;
+}
+
+.SlideShareButton1 input[type=checkbox] {
+    width: 65px;
+    height: 65px;
+
+    position: relative;
+
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    outline: none;
+    background: white;
+}
+
+.SlideShareButton1 input[type=checkbox]:hover {
+    background: rgba(255, 255, 255, 0.747);
+}
+
+.SlideShareButton1 input[type=checkbox]::before {
+    content: '\f1e0';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    color: rgb(41, 41, 41);
+
+    font-family: 'font awesome 5 free';
+    font-weight: 700;
+    font-size: 1.9rem;
+
+    transform: translate(-50%,-50%);
+    transition: all 2s;
+}
+
+.SlideShareButton1 input[type=checkbox]:checked::before {
+    content: '\f00d';
+}
+
+.SlideShareButton1 input[type=checkbox]:checked ~ .menus {
+    width: 260px;
+}
+
+.SlideShareButton1 .menus {
+    width: 0;
+
+    display: flex;
+
+    overflow: hidden;
+
+    transition: all 0.5s;
+}
+
+.SlideShareButton1 .menus .menuItems {
+    width: 65px;
+    height: 65px;
+
+    position: relative;
+
+    background: white;
+    border-left: 1px solid rgb(165, 165, 165);
+}
+
+.SlideShareButton1 .menus .menuItems:hover {
+    background: rgba(255, 255, 255, 0.747);
+}
+
+.SlideShareButton1 .menus .menuItems i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 1.8rem;
+
+    transform: translate(-50%,-50%);
+}
+
+.SlideShareButton1 .fa-whatsapp {
+    color: #25d366;
+}
+
+.SlideShareButton1 .fa-instagram {
+    color: #c32aa3;
+}
+
+.SlideShareButton1 .fa-facebook-f {
+    color: #1877f2;
+}
+
+.SlideShareButton1 .fa-twitter {
+    color: #1da1f2;
+}
+
+.SlideShareButton1 .menus a {
+    color: rgb(34, 34, 34);
+}

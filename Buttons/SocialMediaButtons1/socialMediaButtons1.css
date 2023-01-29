@@ -1,0 +1,112 @@
+.SocialMediaButtons1 {
+    display: grid;
+    place-items: center;
+}
+
+.SocialMediaButtons1 a {
+    color: white; 
+}
+
+.SocialMediaButtons1 .box {
+    width: 150px;
+    height: 60px;
+    margin: 10px 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 2px solid #c32aa3;
+}
+
+.SocialMediaButtons1 .box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: white;
+
+    transform: translate(-50%,-50%);
+}
+
+.SocialMediaButtons1 .box::before {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #c32aa3;
+
+    transition: all .4s;
+}
+
+.SocialMediaButtons1 .box:hover::before {
+    transform: translateY(-100%);
+}
+
+.SocialMediaButtons1 .tele {
+    border: 2px solid #0086cc;
+}
+
+.SocialMediaButtons1 .tele::before {
+    background: #0086cc;
+}
+
+.SocialMediaButtons1 .twit {
+    border: 2px solid #1da1f2;
+}
+
+.SocialMediaButtons1 .twit::before {
+    background: #1da1f2;
+}
+
+.SocialMediaButtons1 .face {
+    border: 2px solid #1877f2;
+}
+
+.SocialMediaButtons1 .face::before {
+    background: #1877f2;
+}
+
+.SocialMediaButtons1 .box::after {
+    content: "FOLLOW";
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #c32aa3;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 60px;
+    
+    transform: translateY(100%);
+    transition: all .4s;
+}
+
+.SocialMediaButtons1 .box:hover::after {
+    transform: translateX(0);
+}
+
+.SocialMediaButtons1 .tele::after {
+    content: "JOIN";
+    color: #0086cc;
+}
+
+.SocialMediaButtons1 .twit::after {
+    color: #1da1f2;
+}
+
+.SocialMediaButtons1 .face::after {
+    color: #1877f2;
+}

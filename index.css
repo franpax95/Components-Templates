@@ -1,0 +1,30 @@
+.accordion-content ol {
+    padding: 15px 20px;
+    padding-top: 10px;
+    margin-left: 46px;
+
+    user-select: none;
+    opacity: .8;
+
+    border-bottom: 1px dashed rgba(0, 0, 0, .08);
+    border-top: 1px dashed rgba(0, 0, 0, .08);
+
+    font-size: .9rem;
+}
+
+.accordion-content ol li {
+    margin: .5rem 0;
+}
+
+.accordion-content ol li a {
+    color: #888888;
+    text-decoration: none;
+    transition: color .25s ease-in-out, font-weight .25s, padding .25s;
+}
+
+.accordion-content ol li a:hover {
+    padding-left: 5px;
+    color: #2b2b2b;
+    /* color: black; */
+    font-weight: bold;
+}
